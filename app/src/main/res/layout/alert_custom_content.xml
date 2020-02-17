@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mining_toast_tv_sell_captcha"
+            style="@android:style/Widget.EditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_captcha"
+            android:inputType="number"
+            android:maxLength="7"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mining_toast_tv_sell_get"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_corner_margin"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="@string/register_get_captcha"
+            android:textColor="@color/colorBtn"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mining_toast_tv_sell_security"
+        style="@android:style/Widget.EditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_safe_psw"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/mining_toast_tv_sell_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_corner"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>

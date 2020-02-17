@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/me_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/head_pic" />
+
+        <TextView
+            android:id="@+id/asset_toast_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="张三" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_no" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_colon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18955825202" />
+
+            <TextView
+                android:id="@+id/asset_toast_tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorBtn"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/call"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alipay" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="132456" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_wecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsfsdf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_switch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="234234234" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp"
+                android:id="@+id/asset_toast_tv_bank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdfsdf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

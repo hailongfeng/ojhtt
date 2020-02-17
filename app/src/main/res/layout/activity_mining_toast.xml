@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_id"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_buy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c1"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_num"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.035"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.145"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mining_toast_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buyer"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c4"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_colon"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/asset_toast_tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorBtn"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/call"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mining_toast_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/mining_toast_tv_sell_captcha"
+                style="@android:style/Widget.EditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_captcha"
+                android:inputType="number"
+                android:maxLength="7"
+                android:textColor="@color/colorGrayText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mining_toast_tv_sell_get"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button_corner_margin"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:text="@string/register_get_captcha"
+                android:textColor="@color/colorBtn"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mining_toast_tv_sell_security"
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_safe_psw"
+            android:inputType="textPassword"
+            android:textColor="@color/colorGrayText"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mining_toast_tv_sell_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_button_corner"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

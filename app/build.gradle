@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'fhl'
+            keyPassword '123456'
+            storeFile file('key/fhl.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cn.ouju.htt"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 20200217
+        versionName "1.0.0"
+        manifestPlaceholders = [qqappid: "tencent100424468"]
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // 混淆
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources false // 移除无用的resource文件
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            minifyEnabled false // 混淆
+            zipAlignEnabled false // Zipalign优化
+            shrinkResources false // 移除无用的resource文件
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    flavorDimensions "zhangphil_demo"
+    productFlavors {
+        httFormal {
+
+        }
+
+        httTest {
+
+        }
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //okhttp网络请求框架
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.5'
+    //插件
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/picasso-2.5.2.jar')
+    //下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    implementation 'com.android.support:design:28.0.0'
+    //chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //zxing
+    //implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.allenliu.versionchecklib:library:2.0.8'
+    //城市选择器
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    //json转换工具
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation files('libs/jsoup-1.6.1.jar')
+    //选项卡
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+
+
+    //v2 add
+    implementation project(':QRCodeLibrary')
+    implementation project(':ZBLibrary')
+    implementation 'com.android.support:multidex:1.0.1'
+    annotationProcessor 'com.github.Raizlabs.DBFlow:dbflow-processor:4.2.4'
+    implementation 'com.github.Raizlabs.DBFlow:dbflow-core:4.2.4'
+    implementation 'com.github.Raizlabs.DBFlow:dbflow:4.2.4'
+
+//    implementation 'com.just.agentweb:agentweb:4.1.2'
+//    implementation 'com.just.agentweb:download:4.1.2'
+//    implementation 'com.just.agentweb:filechooser:4.0.2'
+
+    implementation 'com.just.agentweb:agentweb:4.1.2' // (必选)
+    implementation 'com.just.agentweb:filechooser:4.1.2'// (可选)
+    implementation 'com.download.library:Downloader:4.1.2'// (可选)
+
+    implementation 'com.blankj:utilcode:1.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.dou361.dialogui:jjdxm-dialogui:1.0.3'
+    implementation 'com.gyf.immersionbar:immersionbar:2.3.3-beta15'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+//    implementation 'com.umeng.umsdk:analytics:8.0.0'
+//    implementation 'com.umeng.umsdk:common:2.0.0'
+//    implementation 'com.umeng.umsdk:utdid:1.1.5.3'
+//    implementation 'com.umeng.sdk:push:4.2.0'
+//    implementation 'com.umeng.umsdk:share-core:6.9.4'
+//    implementation 'com.umeng.umsdk:share-wx:6.9.4'
+//    implementation 'com.umeng.umsdk:share-board:6.9.4'
+//    implementation 'com.umeng.umsdk:share-qq:6.9.4'
+//    implementation 'com.umeng.umsdk:share-sina:6.9.4'
+    //v2 add
+
+
+}

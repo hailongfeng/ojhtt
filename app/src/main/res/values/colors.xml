@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#f4f4f4</color>
+    <color name="colorDividerLine">#e2e2e2</color>
+    <color name="bg_common_progressbar_view">#393939</color>
+    <color name="colorGrayText">#929292</color>
+    <color name="colorBtn">#00d491</color>
+    <color name="colorRed">#e57704</color>
+</resources>
