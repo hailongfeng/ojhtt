@@ -14,7 +14,6 @@ public class StartActivity extends XszWebViewActivity {
     @Override
     protected String getUrl() {
         final String url="https://www.lksbb.com/";
-        String url1="http://www.baidu.com";
         return url;
     }
 }
