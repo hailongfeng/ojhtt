@@ -17,10 +17,10 @@
         android:name=".v2.DemoApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/app_icon_2"
+        android:icon="@mipmap/app_icon_3"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/app_icon_2"
+        android:roundIcon="@mipmap/app_icon_3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".v2.activity.WebViewActivity"></activity>

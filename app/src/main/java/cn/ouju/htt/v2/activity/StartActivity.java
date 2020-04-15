@@ -6,10 +6,18 @@ import android.os.Bundle;
 import com.gyf.barlibrary.ImmersionBar;
 
 import cn.ouju.htt.R;
+import cn.ouju.htt.ui.activity.BaseActivity;
+import cn.ouju.htt.utils.UpdateApp;
 import zuo.biao.library.manager.ThreadManager;
 
 
 public class StartActivity extends XszWebViewActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        UpdateApp.update2(StartActivity.this, 0, null);
+    }
 
     @Override
     protected String getUrl() {

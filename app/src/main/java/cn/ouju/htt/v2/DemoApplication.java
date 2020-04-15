@@ -29,6 +29,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.ouju.htt.utils.LanguageUtils;
+import cn.ouju.htt.utils.VersionCodeUtils;
 import cn.ouju.htt.v2.db.XSZDatabase;
 import cn.ouju.htt.v2.utils.ActivityLifecycle;
 import cn.ouju.htt.v2.utils.Constant;
@@ -59,7 +61,8 @@ public class DemoApplication extends BaseApplication {
 		Utils.init(context);
 		initDb();
 		registerActivityLifecycleCallbacks(new ActivityLifecycle());
-
+        VersionCodeUtils.init(this);
+		LanguageUtils.init(this);
 	}
 
 	void initDb(){

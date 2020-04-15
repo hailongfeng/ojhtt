@@ -14,8 +14,8 @@ android {
         applicationId "cn.ouju.htt"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 20200217
-        versionName "1.0.0"
+        versionCode 20200415
+        versionName "1.0.1"
         manifestPlaceholders = [qqappid: "tencent100424468"]
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -79,7 +79,9 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     //zxing
     //implementation 'com.google.zxing:core:3.2.1'
-    implementation 'com.allenliu.versionchecklib:library:2.0.8'
+    //implementation 'com.allenliu.versionchecklib:library:2.0.8'
+    //implementation 'com.github.AlexLiuSheng:CheckVersionLib:2.2.3'
+    implementation 'com.github.AlexLiuSheng:CheckVersionLib:2.3.3.1_appcompat'
     //城市选择器
     implementation 'com.contrarywind:Android-PickerView:3.2.7'
     //json转换工具

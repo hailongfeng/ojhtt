@@ -2,5 +2,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ll_splash"
     style="@style/activity_page"
-    android:background="@mipmap/splash">
+    android:background="@mipmap/splash2">
 </LinearLayout>
